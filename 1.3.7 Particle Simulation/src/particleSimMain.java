@@ -89,7 +89,7 @@ public class particleSimMain {
 	public static boolean showEnergyDataGraph = false;
 	public static boolean showEnergyAveragesGraph = false;
 	public static boolean showMidpointXGraph = false;
-	public static boolean showP1XGraph = false;
+	public static boolean showP1XGraph = true;
 	public static boolean showAvgPositionX = true;
 
 	public static boolean randomForce = true;
@@ -485,6 +485,7 @@ public class particleSimMain {
 				System.out.println(
 						"P1 Force " + i + " " + particle1.forces.get(i).tag + ": " + particle1.forces.get(i).magnitude);
 			}
+			
 			for (int k = 0; k < particle2.forces.size(); k++) {
 				System.out.println(
 						"P2 Force " + k + " " + particle2.forces.get(k).tag + ": " + particle2.forces.get(k).magnitude);
